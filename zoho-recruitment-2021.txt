@@ -1,0 +1,16 @@
+public static void main(String[] args) {
+		String s="WATER";
+		int startIndex = s.length()/2;
+		int lengthOfString = s.length();
+		for(int i=1;i<=lengthOfString;i++) {
+			for(int k=i-1;k<lengthOfString;k++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<i;j++) {
+				int index = (startIndex+j)%s.length();
+				System.out.print(s.charAt(index));
+			}
+			System.out.println();
+		}
+		
+	}
