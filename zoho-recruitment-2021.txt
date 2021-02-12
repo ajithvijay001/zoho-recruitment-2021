@@ -7,7 +7,7 @@ public static void main(String[] args) {
 				System.out.print(" ");
 			}
 			for(int j=0;j<i;j++) {
-				int index = (startIndex+j)%s.length();
+				int index = (startIndex+j)%lengthOfString;
 				System.out.print(s.charAt(index));
 			}
 			System.out.println();
